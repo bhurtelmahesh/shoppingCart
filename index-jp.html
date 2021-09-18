@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ショッピングカートにコースを追加する</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/logo.jpg" id="logo">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-cart">
+                            <div id="shopping-cart">
+                                    <table id="cart-content" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>イメージ</th>
+                                                <th>コース名</th>
+                                                <th>価格</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="clear-cart" class="button u-full-width">カートをクリアする</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="hero-content">
+                                <h2>今日から学ぼう</h2>
+                                <p>特別なオファー, コースどれでも1500円</p>
+                                <form action="#" id="search" method="post" class="form">
+                                    <input class="u-full-width" type="text" placeholder="何を学びたい? " id="search-course">
+                                    <input type="submit" id="submit-search-course" class="submit-search-course">
+                                </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-bar">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icon icon1">
+                        <p>20,000 オンラインコース <br>
+                        新たなスキルを身に付けよう</p>
+                    </div>
+                    <div class="four columns icon icon2">
+                        <p>エキスパートな教官<br>
+                            様々な教え方で学ぼう</p>
+                    </div>
+                    <div class="four columns icon icon3">
+                        <p>ライフタイムアクセス <br>
+                        自分のペースで学ぼう</p>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="courses-list" class="container">
+        <h2 style="text-align: center;" id="heading" class="heading">オンラインコース</h2>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/course1.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>初心者向けの　HTML5, CSS3, JavaScript</h4>
+                        <p>Bhurtel Maheshwor</p>
+                        <img src="img/stars.png">
+                        <p class="price">20000円  <span class="u-pull-right ">1500円</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="1">カートに入れる</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course2.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>クッキングコース</h4>
+                            <p>Bhurtel Maheshwor</p>
+                            <img src="img/stars.png">
+                            <p class="price">20000円  <span class="u-pull-right ">1500円</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="2">カートに入れる</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course3.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>初心者向けのギータ－</h4>
+                            <p>Bhurtel Maheshwor</p>
+                            <img src="img/stars.png">
+                            <p class="price">20000円  <span class="u-pull-right ">1500円</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="3">カートに入れる</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/course4.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>家オーチャード</h4>
+                        <p>Bhurtel Maheshwor</p>
+                        <img src="img/stars.png">
+                        <p class="price">20000円  <span class="u-pull-right ">1500円</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="4">カートに入れる</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course5.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>リサイクル製品で家をデコる</h4>
+                            <p>Bhurtel Maheshwor</p>
+                            <img src="img/stars.png">
+                            <p class="price">20000円  <span class="u-pull-right ">1500円</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="5">カートに入れる</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course1.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>初心者向けのウェブデザイン</h4>
+                            <p>Bhurtel Maheshwor</p>
+                            <img src="img/stars.png">
+                            <p class="price">20000円  <span class="u-pull-right ">1500円</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="6">カートに入れる</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/course2.jpg" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>メキシカン料理を学ぼう</h4>
+                        <p>Bhurtel Maheshwor</p>
+                        <img src="img/stars.png">
+                        <p class="price">20000円  <span class="u-pull-right ">1500円</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="7">カートに入れる</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course3.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>ミュージックスタジオを作ろう</h4>
+                            <p>Bhurtel Maheshwor</p>
+                            <img src="img/stars.png">
+                            <p class="price">20000円  <span class="u-pull-right ">1500円</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="8">カートに入れる</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course4.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>野菜や果物を収穫</h4>
+                            <p>Bhurtel Maheshwor</p>
+                            <img src="img/stars.png">
+                            <p class="price">20000円  <span class="u-pull-right ">1500円</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="9">カートに入れる</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/course5.jpg" class="course-image u-full-width">
+                        <div class="info-card">
+                            <h4>家で干菓子を作ろう</h4>
+                            <p>Bhurtel Maheshwor</p>
+                            <img src="img/stars.png">
+                            <p class="price">20000円  <span class="u-pull-right ">1500円</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="10">カートに入れる</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/course1.jpg" class="course-image u-full-width">
+                            <div class="info-card">
+                                <h4>新しい JavaScript</h4>
+                                <p>Bhurtel Maheshwor</p>
+                                <img src="img/stars.png">
+                                <p class="price">20000円  <span class="u-pull-right ">1500円</span></p>
+                                <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="11">カートに入れる</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/course2.jpg" class="course-image u-full-width">
+                            <div class="info-card">
+                                <h4>100ヶの自然なレシピ</h4>
+                                <p>Bhurtel Maheshwor</p>
+                                <img src="img/stars.png">
+                                <p class="price">20000円  <span class="u-pull-right ">1500円</span></p>
+                                <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="12">カートに入れる</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+            </div> <!--.row-->
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="primary" class="menu">
+                                <a class="link" href="#">ビジネス向けのサイト</a>
+                                <a class="link" href="#">教官になる</a>
+                                <a class="link" href="#">モバイルアプリ</a>
+                                <a class="link" href="#">サポート</a>
+                                <a class="link" href="#">ヘルプ</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secondary" class="menu">
+                                <a class="link" href="#">会社案内</a>
+                                <a class="link" href="#">一緒に働こう</a>
+                                <a class="link" href="#">ブログ</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <button class="button-primary" style="position: fixed; top: 10px; right: 5px; padding: none; text-align: center;"><a href="index.html" style="color: aliceblue; text-decoration: none; ">English</a></button>
+    <script src="js/app.js"></script>
+</body>
+</html>
